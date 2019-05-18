@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72e4d3fb-ba50-448a-9d93-4a63f20397ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day01/ex02_basic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day01_vscode/ex01_basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day01_vscode/ex01_basic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day01/ex01_basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/day01/ex01_basic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day01/ex03_dictionary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day01_vscode/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../day01_vscode/Readme.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,11 +13,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day01/ex01_basic.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
               <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/day01/ex03_dictionary.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="41" selection-start-line="41" selection-end-line="52" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -43,6 +49,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>str</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -51,6 +62,7 @@
       <list>
         <option value="$PROJECT_DIR$/day01/ex02_basic.py" />
         <option value="$PROJECT_DIR$/day01/ex01_basic.py" />
+        <option value="$PROJECT_DIR$/day01/ex03_dictionary.py" />
       </list>
     </option>
   </component>
@@ -107,7 +119,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ex01_basic">
+  <component name="RunManager" selected="Python.ex03_dictionary">
     <configuration name="ex01_basic" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -150,8 +162,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="ex03_dictionary" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="workspace" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day01" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day01/ex03_dictionary.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ex03_dictionary" />
         <item itemvalue="Python.ex01_basic" />
         <item itemvalue="Python.ex02_basic" />
       </list>
@@ -205,6 +239,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day01/ex03_dictionary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="41" selection-start-line="41" selection-end-line="52" selection-end-column="24" />
         </state>
       </provider>
     </entry>

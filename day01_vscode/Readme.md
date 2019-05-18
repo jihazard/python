@@ -20,11 +20,17 @@
             - '' , ""  ,+ , * , [] , [:]
         - List
             -  index : 0부터 전체 항목수에 -1 한것 까지 
-        - Tuple(map)
+        - Tuple
             - (), [], [:] , index : 0부터 전체 항목수에 -1 한것 까지, *** readonly ***
-        - Dicionary
+        - Dicionary(map)
+            - {} , 해시 테이블의 일종,  키-값 쌍으로 구성 
+        - Set
+            - {} , 중복허용 안함, 순서가 없음, 인덱싱을 통해 자료형의 값 획득 불가능
 
-
+        - 집합 자료형 활용
+            - 교집합 (&, intersection()) ex)  a1 & b1  ,  a1.intersection(b1)
+            - 합집합 (| , union())  ex) a1 | b1 , a1.union(b1)
+            - 차집합 (- , difference()) ex) a1 - b1 , a1.dirrence(b1)
 
 
     - 복소수 real , imag, conjugate(),abs()
@@ -87,6 +93,48 @@
     print(type(lst))
 
     ~~~
+    -dictionary
+    ~~~python
+    dict={}
+
+    dict["one"] = "this is one"
+    dict[2] = "this is two"
+
+    tinydict = {'name': 'john', 'code': '1234', 'room': 123}
+
+    print(dict["one"])
+    print(dict[2])
+    print(tinydict)
+    print(tinydict["name "])
+
+    ~~~
+
+    - set
+    ~~~python
+    s=set([1, 2, 3, 4, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6])
+
+    print(s) #중복불가
+    s2 = set("happy jihwan")
+    print(s2)
+
+    s2.add("111")
+    print(s2)
+    s2.update({"korea", "usa", "japan"})
+    print(s2)
+
+    s2.remove("japan")
+    print(s2)
+
+    s2.discard("usa")
+    print(s2)
+
+    print(s2)
+
+    s2.clear();
+    print(s2)
+    ~~~
+
+    - 집합 자료형 활용 
     - 함수
         - str() 문자형으로 변환 ex) str(1) + 'hi '    '1hi'
         - type() 타입 확인  ex) type(1)    <class 'int'>   type('hello') <class 'str'>
