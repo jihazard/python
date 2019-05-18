@@ -12,6 +12,9 @@
     ~~~python
     # 파이썬의주석처리
 
+    '''여러줄 주석'''
+    """여러줄 주석"""
+
     ~~~
     - 데이터형식
         - Numbers
@@ -31,7 +34,21 @@
             - 교집합 (&, intersection()) ex)  a1 & b1  ,  a1.intersection(b1)
             - 합집합 (| , union())  ex) a1 | b1 , a1.union(b1)
             - 차집합 (- , difference()) ex) a1 - b1 , a1.dirrence(b1)
+            ~~~python
+            s1 = set([1, 2, 3, 4, 5, 6])
+            s2 = set([4, 5, 6, 7, 8, 9])
 
+            #교집합
+            print(s1 & s2)
+            print(s1.intersection(s2))
+            #합집합
+            print(s1 | s2)
+            print(s1.union(s2))
+            #차집합
+            print(s1-s2)
+            print(s1.difference(s2))
+            
+            ~~~
 
     - 복소수 real , imag, conjugate(),abs()
     ~~~python
@@ -63,34 +80,25 @@
 
     - 리스트 , 튜플
     ~~~python
-    list =["abcd",765,2.22,"yoon",70.2]
-    small=[123,456]
+    thislist = ["apple", "banana", "cherry"]
+    thislist.pop()
+    print(thislist)   # ["apple", "banana"]
 
-    print(list)
-    print(list[0])
-    print(list[1:3])
-    print(list[2:])
-    print(small *2)
-    print(list + small)
 
-    print("---------------------------------------")
-    lst = [1,2,3,1,'abc',12.34,3]
-    print(lst)
-    lst.append("aaa")
-    print(lst)
-    lst.remove("aaa")
-    print(lst)
-    print(lst.count(1))
-    print("---------------------------------------")
-    t = (1,2,3,1,'abc',12.34,3)
-    print(t)
-    print(t.count(1))
-    index = t.index(12.34)
-    print(index)
+    thislist = ["apple", "banana", "cherry"]
+    del thislist[0]
+    print(thislist) # ['banana', 'cherry']
 
-    print(lst[1:4])
-    print(type(t))
-    print(type(lst))
+    thislist = ["apple", "banana", "cherry"]
+    thislist.clear()
+    print(thislist) #[]
+
+    thislist = ["apple", "banana", "cherry"]
+    mylist = thislist.copy()
+    print(mylist)   #['apple', 'banana', 'cherry']
+
+
+
 
     ~~~
     -dictionary
@@ -106,6 +114,8 @@
     print(dict[2])
     print(tinydict)
     print(tinydict["name "])
+
+    
 
     ~~~
 
@@ -134,7 +144,23 @@
     print(s2)
     ~~~
 
-    - 집합 자료형 활용 
+    - 포맷팅
+    ~~~python
+    x = input()
+
+    a= "im a {}".format(x)
+    print(a)
+
+    b= "{},{},{}".format(x,x,x)
+    print(b)
+
+    c="{xx} {zz} {dd}".format(xx="aa",zz="bb", dd="dd")
+    print(c)
+
+    d= "{2}{1}{0}".format("1","2","3")
+    print(d)
+    ~~~
+
     - 함수
         - str() 문자형으로 변환 ex) str(1) + 'hi '    '1hi'
         - type() 타입 확인  ex) type(1)    <class 'int'>   type('hello') <class 'str'>
@@ -143,5 +169,46 @@
         - replace()
         - split()
         - input()  ex) x= input()         print("안녕하세요 " ,  x ) : 안녕하세요 x
- 
-* 
+    
+    - 기본연산자
+        - 산술연산자
+        - 비교연산자
+        - 할당 연산자
+        - 논리 연산자
+        - 비트 연산자
+            - &, |, ^ ,~ , <<, >>
+        - 구성원 연산자
+            - in , not in  값 비교
+        - 식별 연산자
+            - is , not is  메모리 위치 비교
+
+        ~~~python
+         # 보수 연산
+        '''
+        보수 연산 
+            ~  : - (원래값 +1 )        
+        '''
+        print(~y) #-8
+        print(~100) #-101
+        print(~-100) #99
+        
+        '''
+        << 좌측시프트 
+            원래값 * 2 ** bit수
+        >> 우측시프트
+            원래값 / 2 ** 비트수
+        '''
+        print("=========<<")
+        x=8
+        y= x << 3
+        print(y)        # 64
+        print(8*2**3)   # 64
+
+        print("=========>>")
+        x=8
+        y= x >> 2
+        print(y)        # 2
+        print(8/2**2)   # 2
+        
+        
+        ~~~

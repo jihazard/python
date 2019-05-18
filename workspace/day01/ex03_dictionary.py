@@ -52,9 +52,26 @@ print(s1.union(s2))
 print(s1-s2)
 print(s1.difference(s2))
 
+print(bool(0))
+print(bool(1))
+print(bool("1"))
+print(bool("0"))
 
+x = input()
 
+a= "im a {}".format(x)
+print(a)
 
+b= "{},{},{}".format(x,x,x)
+print(b)
 
+c="{xx} {zz} {dd}".format(xx="aa",zz="bb", dd="dd")
+print(c)
 
+d= "{2}{1}{0}".format("1","2","3")
+print(d)
 
+print(int("19"))
+
+print(chr(65))
+print(ord('A'))
