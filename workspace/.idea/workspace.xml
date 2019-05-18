@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72e4d3fb-ba50-448a-9d93-4a63f20397ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day01/ex04_operator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day01/ex05_if.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day01/ex06_if.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day01/ex07_if.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day01/ex08_if.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day01/ex09_if.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day01/ex10_for.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day01/ex11_for_윤지환.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day01_vscode/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../day01_vscode/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day01/ex12_range.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day01/ex13_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day01/ex03_dictionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/day01/ex03_dictionary.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,11 +50,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day01/ex11_for_윤지환.py">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day01/ex12_range.py">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
-              <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+              <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/day01/ex13_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -107,6 +117,8 @@
         <option value="$PROJECT_DIR$/day01/ex09_if.py" />
         <option value="$PROJECT_DIR$/day01/ex10_for.py" />
         <option value="$PROJECT_DIR$/day01/ex11_for.py" />
+        <option value="$PROJECT_DIR$/day01/ex12_range.py" />
+        <option value="$PROJECT_DIR$/day01/ex13_test.py" />
       </list>
     </option>
   </component>
@@ -168,28 +180,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ex10_for">
-    <configuration name="ex06_if" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="workspace" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day01" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day01/ex06_if.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.ex12_range">
     <configuration name="ex07_if" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -274,13 +265,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="ex12_range" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="workspace" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day01" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day01/ex12_range.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ex12_range" />
         <item itemvalue="Python.ex10_for" />
         <item itemvalue="Python.ex09_if" />
         <item itemvalue="Python.ex08_if" />
         <item itemvalue="Python.ex07_if" />
-        <item itemvalue="Python.ex06_if" />
       </list>
     </recent_temporary>
   </component>
@@ -393,8 +405,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/day01/ex11_for_윤지환.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day01/ex12_range.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day01/ex13_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
         </state>
       </provider>
     </entry>
