@@ -20,7 +20,13 @@ while 1:
 f = open("test2.txt", "r") # read
 lines = f.readlines()
 
-for line in lines:
-    print(line)
+# for line in lines:
+#     print(line)
+
+while True:
+    data = f.readline()
+    if not data: 
+        break
+    print(data)
 
 f.close()
