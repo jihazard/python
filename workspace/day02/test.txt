@@ -1,0 +1,8 @@
+Lambdas
+
+Lambda expressions (sometimes called lambda forms) are used
+ to create anonymous functions. The expression lambda parameter
+ s: expression yields a function object. The unnamed object behave
+ s like a function object defined with:출처: https://bluese05.tistory.com/63 [ㅍㅍㅋㄷ]
+
+출처: https://bluese05.tistory.com/63 [ㅍㅍㅋㄷ]
