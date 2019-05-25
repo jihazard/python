@@ -1,4 +1,4 @@
-#개떡같은 파이썬
+#개떡같은 파이썬 Day1
 * 파이썬 설치하기 
     - python.org
     - anaconda.com
