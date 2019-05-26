@@ -9,27 +9,20 @@
 
 '''
 
-def printDeco(func):
-	def decorated():
-		print("=============================")
-		func()
-		print("=============================")
-	return decorated
-
-
 class Score:
 # 초기화 함수
-	def __init__(self, kor, eng, elec):
+	def __init__(self, kor, eng, elec):	
 		self.kor = kor
 		self.eng = eng
 		self.elec = elec
+
 # 입력하는 함수
 	def setJumsu(self, kor, eng, elec):
 		self.kor = kor
 		self.eng = eng
-		self.elec = elec
-	
+		self.elec = elec		
 # 총점 구하는 함수
+	
 	def totalSum(self):
 		return self.kor + self.eng + self.elec
 
@@ -38,26 +31,23 @@ class Score:
 		return self.totalSum()/3
 		
 # 입력으로 처리하는 함수
-	@printDeco
 	def paintResult(self,mode):
-		self.mode = mode
-		if mode == "총합":
-			return print(self.totalSum())
-		elif mode == "평균":
-			return print(self.totalAvg())
-		else:
-			return print("잘못입력하셨습니다 총점, 평균 중 선택해주세요")
+		# 삼항연사자로 처리
+		# result = self.totalSum() if mode=="총합" else self.totalAvg()
+		#딕셔너리 타입으로 처리
+		map = {"총합": self.totalSum(), "평균": self.totalAvg()}
+		print("{} : {}".format(mode, map.get(mode)))			
 
 
 def main():
-    print("============================================")
-    print("===============과제0 평균구하기===============")
-    scorex = Score(10,10,10)
-    scorex.paintResult("총합")
-    scorex.paintResult("평균")
-    scorex.setJumsu(50,50,50)
-    scorex.paintResult("총합")
-    scorex.paintResult("평균")
+	print("==============================================")
+	print("===============과제0 평균구하기===============")
+	scorex = Score("111",10,10)
+	scorex.paintResult("총합")
+	scorex.paintResult("평균")
+	print(scorex.totalSum())
+	print(scorex.totalAvg())
+	print("==============================================")
 
 
 if __name__ == "__main__":
