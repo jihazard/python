@@ -17,10 +17,13 @@ class Score:
 		self.elec = elec
 
 # 입력하는 함수
-	def setJumsu(self, kor, eng, elec):
+	def setJumsu(self, kor, eng, elec ,mode):
 		self.kor = kor
 		self.eng = eng
-		self.elec = elec		
+		self.elec = elec
+		self.mode = mode
+		self.paintResult(mode)
+
 # 총점 구하는 함수
 	
 	def totalSum(self):
@@ -35,16 +38,20 @@ class Score:
 		# 삼항연사자로 처리
 		# result = self.totalSum() if mode=="총합" else self.totalAvg()
 		#딕셔너리 타입으로 처리
-		map = {"총합": self.totalSum(), "평균": self.totalAvg()}
-		print("{} : {}".format(mode, map.get(mode)))			
+		result = {"총합": self.totalSum(), "평균": self.totalAvg()}
+		print("{} : {}".format(mode, result.get(mode)))			
 
 
 def main():
 	print("==============================================")
 	print("===============과제0 평균구하기===============")
-	scorex = Score("111",10,10)
+	scorex = Score(10,10,10)
 	scorex.paintResult("총합")
 	scorex.paintResult("평균")
+	# 입력받는 함수
+	scorex.setJumsu(50,50,50,"총합")
+	
+	# 클래스의 함수로 호출
 	print(scorex.totalSum())
 	print(scorex.totalAvg())
 	print("==============================================")
