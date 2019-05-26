@@ -25,7 +25,6 @@ class Score:
 		self.paintResult(mode)
 
 # 총점 구하는 함수
-	
 	def totalSum(self):
 		return self.kor + self.eng + self.elec
 
