@@ -34,9 +34,6 @@ class Score:
 		
 # 입력으로 처리하는 함수
 	def paintResult(self,mode):
-		# 삼항연사자로 처리
-		# result = self.totalSum() if mode=="총합" else self.totalAvg()
-		#딕셔너리 타입으로 처리
 		result = {"총합": self.totalSum(), "평균": self.totalAvg()}
 		print("{} : {}".format(mode, result.get(mode)))			
 

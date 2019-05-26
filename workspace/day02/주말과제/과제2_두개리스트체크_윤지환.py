@@ -13,8 +13,7 @@ sameFrequency('1233', '2133') --> mached
 
 '''
 
-def frequency_check(str1,str2):
-    i = 0
+def sameFrequency(str1,str2):
     vali = Vali()
     # 길이체크 
     if vali.is_samelength(str1,str2):
@@ -22,11 +21,12 @@ def frequency_check(str1,str2):
         for n in str1:
             if str2.find(n) == -1:
                 return print("not matched")    
-        return print("matched") 
     else:
         return print("not matched")
+    
+    return print("matched") 
 
-
+#예외처리를 위한 클래스 생성
 class Vali:
     def is_samelength(self,str1,str2):
         try:
@@ -37,21 +37,11 @@ class Vali:
         except ValueError:
             return False
             
-    def is_samecontent(self,a,b):
-        try:
-            if a != -1:
-                return True
-            else:
-                return False
-        except ValueError:
-            return False
-
-
 def main():
     print("==============================================")
-    print("===============과제1 체크하기=================")
-    a,b = "123377", "377321"
-    frequency_check(a,b)
+    print("===============과제2 체크하기=================")
+    a,b = "123377a", "3773a21a"
+    sameFrequency(a,b)
     print("==============================================")
 
 
