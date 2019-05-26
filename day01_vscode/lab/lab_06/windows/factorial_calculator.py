@@ -63,7 +63,7 @@ def main():
             user_input = 0
             print("Thank you for using this program")
         else:
-            print("input again, Please")
+            print("Input again, Please")
     
     # ==================================
 
