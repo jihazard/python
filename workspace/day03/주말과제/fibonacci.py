@@ -2,8 +2,16 @@
 
 def fibonacci(number):
     data = []
-    for i in number:
-        print(i)
+    for i in range(1, number+1):
+        data.append(i)
+    
+    num = 1
+    for x in data:
+        print(x)
+        if num >= 3:
+            data[num] = data[num-1] + data[num-2]
+           
+        num += 1
 
 
 
