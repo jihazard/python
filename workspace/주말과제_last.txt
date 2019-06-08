@@ -1,0 +1,420 @@
+>> day04 - 19/06/08
+
+  - 지난시간 정리
+
+  - lambda
+
+  - closure
+     https://ko.wikipedia.org/wiki/%ED%81%B4%EB%A1%9C%EC%A0%80_(%EC%BB%B4%ED%93%A8%ED%84%B0_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)
+
+    프로그래밍 언어에서의 클로저란 퍼스트클래스 함수를 지원하는 언어의 네임 바인딩 기술이다
+    일급 객체 의 특징중에서 함수 내에 함수를 정의 할 수 있다고 했다. 이를 내부 함수(inner function)이라고 한다
+    클로저는 일반 함수와는 다르게, 자신의 영역 밖에서 호출된 함수의 변수값과 레퍼런스를 복사하고 저장한 뒤, 이 캡처한 값들에 액세스할 수 있게 도와준다.
+
+ 문제] [1, 2, 3, 4, 5, 6, 7, 8, 9]      5 < x      x * 2 결과를 새로운 리스트로 출력하기.
+
+
+  - 간단한 알고리즘(자료구조) - 스택/ 큐/ 링크드리스트/ 재귀....
+
+  - 정규식(Reqular Expression)
+  https://whatisthenext.tistory.com/116
+  https://www.w3schools.com/python/python_regex.asp
+  https://www.javatpoint.com/python-regex
+
+  > https://www.javatpoint.com/python-programs
+
+  - Web Crawling (웹 크롤링)
+
+ D:\190518_0608_python_basic\workspace\day03_190601>pip3 install requests
+ D:\190518_0608_python_basic\workspace\day03_190601>pip3 install bs4
+
+ D:\190518_0608_python_basic\workspace\day03_190601>pip install selenium
+
+ https://www.seleniumhq.org/
+
+==========================================
+"""
+1) 다음의 주민번호 리스트에서 남, 녀 별로 90 년생 이후 출생자를 골라내라.
+"""
+id_list = ['920801-1041798', '800902-2048746', '971010-1023987', '871203-2014987',
+         '820801-1041798', '900902-2048746', '941010-1023987', '971203-2014987']
+
+--------------------------------------------------
+"""
+2) 다음 영어 문장에서 너(you)는 몇번 나오는가 ?
+    "You don't go to school on Saturday. I want you be happy.
+    I miss you very much. You don't forget me"
+"""
+s = "You don't go to school on Saturday. I want you be happy. I miss you very much. You don't forget me"
+---------------------------------------------  
+
+# HTML 에서 BABY 이름 찾기
+"""
+3)
+step 1 - https://developers.google.com/edu/python/exercises/baby-names 에서
+file download 하여 babynames directory 로 save
+step 2 - <tr align="right"><td>1</td><td>Michael</td><td>Jessica</td> 에
+match 되는 정규표현식을 이용하여 (rank, boy-name, girl-name) tuples 추출하여
+print
+"""
+-------------------------------------------
+4) UpDown game  
+   랜덤 (1~100 사이 숫자 하나 받아놓고 ) 숫자 저장
+   사용자로 부터 5번의 입력 받아서 출력하는 프로그램
+-------------------------------------------
+"""
+5) 다음 문장 수행 후의 output 은 ?
+"""
+xlist = [1, [1, 2], [1, 2, 3]]
+print(xlist[1][1] + 1)
+----------------------------------------------
+"""
+Slide Type
+6) 다음 문장 수행 후의 output 은 ?
+"""
+s = ("a", "b", "c")
+for i in range(1, len(s) + 1):
+    sub = ""
+    for j in range(i):
+        sub = s[j] + sub
+    print(sub)
+
+"""
+7) 다음 문장 수행 후의 output 은 ?
+"""
+def sum_part(xlist, n):
+    sum = 0
+    for x in xlist[n]:
+        sum = sum + x
+    return sum
+
+ylist = [[1, 2], [3, 4], [5, 6], [7, 8]]
+x = sum_part(ylist, 2)
+print(x)
+
+"""
+Slide Type
+8) 숫자로 피라미드 만들기 : 홀수 숫자를 입력으로 받아서 좌우 대칭되는
+피라미드형태로 출력 한다.
+"""
+def pyramid(n):
+    for i in range(n):
+        print(" " * (n - i), end="")
+        for j in range(1, i + 2):
+            print(j, end="")
+        for j in range(i, 0, -1):
+            print(j, end="")
+        print()
+pyramid(7)
+-----------------------------------------------
+
+=========================================
+>> day03 - 19/06/01
+
+ - 지난시간 정리
+
+ - Inheritance(상속)
+
+ - Module
+    내부 모듈
+    외부 모듈
+    사용자 모듈 만들기
+	- 같은 경로에 있어야한다.
+	- 루트 경로에 있으면 풀경로 안써도 된다.
+  
+ https://docs.python.org
+ https://docs.python.org/ko/3/library/
+
+>>> import sys
+>>> sys.path
+>>> sys.path[1]
+>>> sys.path.append('c:\Pysrc')
+>>> sys.path
+
+  형식>
+   방법1)
+   import threading
+   import time
+ 또는
+   import threading, time, os, sys,...
+
+   방법2)
+   form Math import acos, factorial
+
+   방법3)
+   form Math import *
+
+ - xml
+
+ - sqlite3 (database)
+
+   https://docs.python.org/ko/3/library/sqlite3.html
+
+   http://www.dbguide.net/index.db
+
+   4대구문 - select / insert / update / delete 
+
+ pip install openpyxl   <--- 엑셀파일 사용하기 위해 라이브러리 인스톨하기 
+
+
+문제] 주소록 테이블 만들기 
+ 
+
+ - 간단한 알고리즘(자료구조) - 스택/ 큐/ 링크드리스트/ 재귀....
+
+---------------------------------------------------------------
+>>도전문제
+피보나치 수열(Fibonacci Sequence)을 계산하는 프로그램도 파이썬으로 간단히 작성할 수
+있다.
+피보나치 수열은 0 과 1 로 시작하고 다음의 숫자는 이전 숫자 두개를 더한 숫자들로
+이루어 진다.
+0, 1, 1, 2, 3, 5, 8, 13 ......
+n 개의 숫자로 이루어진 피보나치 수열을 출력하는 함수를 작성하라.
+
+
+5) 임의의 범위의 숫자를 모두 곱하는 함수를 작성하라.
+    ex) multiply(2,4) ==> 2 * 3 * 4 = 24
+
+6) 숫자로 이루어진 list 의 평균을 구하는 함수를 작성하라.
+   단, built-in 함수를 이용하지 않고 for loop 을 이용하여 새로운 함수 작성.
+
+  def average(listx) :
+      내용 구현 
+    
+ 
+   average([2,3,4,5,6])
+
+
+7) class 구현하기 - 상속 <==== 필수 
+  class Emp:    
+    이름, 부서, 직급,연락처,사원번호 
+
+  class Regular(Emp):
+	급여
+
+  class Sales(Regular):
+ 	커미션
+
+
+
+================================================
+
+>> day02 - 19/05/25
+
+- 제어문
+   while
+
+- method :
+   def  methodName(): 내용기재
+   *args
+   **kwargs
+
+  문제1] 사칙연산 함수  add(x,y), sub( - ) , mul(*), div(/)  2개는 리턴 타입으로 만들기 
+
+
+- file
+  ex)
+   f = open("파일명.확장자","모드") : r, w, a, b
+     사용(쓰기/읽기)
+   f.close()
+
+   
+  with open문으로 file 읽기/쓰기
+  ex)
+  with open("파일명.확장자","모드") as f :
+	사용(쓰기/읽기)
+
+  with 문을 이용하면 with 블록을 벗어나는 순간 열린 파일 객체가 자동으로 close되어 편리함.
+
+ - try / except  : 예외처리 
+
+ - class 설계
+
+
+
+
+
+
+문제2] jumsu.txt 파일에 저장된 점수를 읽어서 평균을 구하는 프로그램 작성하기.
+    (화면 출력 및 결과를 파일(avg_result.txt)로도 저장하기.)
+
+문제3] 사칙 연산 함수를 갖고 있는 class FourCal :
+					plus(+), sub(-), div(/), mul(*)
+ 객체 생성해서 각 함수 호출해서 결과 출력하는 프로그램 작성
+
+
+ 과제0] class Score: 생성해서
+           국어, 영어, 전산 점수 받을 수 있는 초기화 함수 만들고
+ 	   총점 구하는 함수
+	   평균 구하는 함수 
+	   출력하는 함수 만들어서
+	   입력하는 함수 <--- 추가
+ 	객체 생성해서 결과 출력하는 프로그램 작성
+
+과제1]
+-첫번째 list 와 두번째 list 의 length 는 동일
+-두번째 list 의 각 element 는 첫번째 list element 의 제곱이어야 한다.
+-서로 match 되는 element 가 위 조건과 같은지 비교하여 
+   참이면 "Two lists are matched", 
+   거짓이면 "Two lists are unmatched" 출력
+예)
+frequency_check([1,2,3,2,5,6], [1,4,9,4,25,36]) --> lists are matched
+
+과제2]
+2 개 string 을 입력 받아 두글자 조합의 frequency 가 같은지 비교한다.
+
+예, (182, 281): true, 
+     (34, 14): false, 
+     (3589578, 5879385): true,  
+     (22, 222): false
+(해답) 조합의 frequency 가 같으려면 두 string 의 길이가 같고 글자들의 frequency 가 같아야 한다.
+
+예)
+sameFrequency('1233', '3133') --> not mached
+sameFrequency('1233', '2133') --> mached
+
+과제3]
+상점의 모든 과일의 재고와 전체 가격 계산
+각 과일의 개당 가격은 다음과 같다.
+
+바나나 : 4000 원
+사과: 2000 원
+오렌지: 1500 원
+배 : 3000 원
+
+각 과일의 재고는 다음과 같다.
+바나나 : 6 개
+사과 : 0 개
+오렌지: 32 개
+배 : 15 개
+
+dictionary 를 이용하여 재고 과일의 총 금액을 계산하라. 
+(가격 dictionary 와 재고 dictionary 를 별도로 작성)
+
+예상 output:
+
+price: 4000
+stock: 6
+price: 2000
+stock: 0
+price: 1500
+stock: 32
+price: 3000
+stock: 15
+The total money is 117000
+
+과제4]
+파이썬 강좌의 수강생 목록은 다음과 같다. 어떤 사람이 수강생 목록에 존재하는지
+    check 하는 함수를 작성하라.(함수명 임의적으로 생성)
+    목록에 존재하면 True, 존재하지 않으면 False 를 반환한다.
+
+   students = ["김철수", "홍길동", "문재인", "김정은", "트럼프", "성춘향"]
+
+  결과 출력 예상>
+   print(check_list(students, "홍길동")) 
+
+
+- 모듈 
+
+- 패키지
+
+참고) 정규식(Reqular Expression)
+
+
+
+=====================================================
+>> day01 - 19/05/18
+
+ - 설치 및 특징
+
+ https://www.anaconda.com/distribution/#download-section
+ https://www.jetbrains.com/pycharm/download/#section=windows
+
+- 다운로드 사이트 
+  https://www.python.org/
+
+ - 아나콘다
+  https://www.anaconda.com/
+
+ - 파이참
+  https://www.jetbrains.com/pycharm/download/#section=windows
+
+
+ - 설치 참조
+   https://wikidocs.net/8
+   https://wikidocs.net/2825
+
+>> 코딩전용 폰트
+ - D2Coding font
+https://github.com/naver/d2codingfont
+
+ -- 파일 > 기본설정 > 설정
+
+
+ - 기본 문법
+
+1) 자료형 - 숫자, 문자열, 리스트, 튜플, 딕셔너리, 집합, 논리형
+
+#  한줄 주석
+
+'''  여러줄 주석  '''
+"""  여러줄 주석  """
+
+0x숫자 : 16진수
+0숫자 : 8진수
+숫자 : 10진수 
+
+켤레복소수 : 허수부분의 부호를 바꿈
+복소수 a=1+2j 에 대하여 허수부분의 부호를 바꾼 a=1-2j를 '켤레복소수'라고 한다.
+
+2) 연산자 
+
+ 0을 제외한 모든것은 참 - 10, 'string', 12.34, -3, 'A',....
+ bool(-1)
+ bool('a')
+ bool(0)
+
+ \문자 : 제어문자
+ \n , \t , \a,...
+ 
+ %문자 : 포맷팅(출력서식)  - 2.x  
+ %s , %c , %f, %d ...
+
+ "{} {}".format(1, 2)   - 3.x
+ "{1} {0}".format(1, 2) 
+ "{a} {b}".format(a=1, b=2) 
+
+3) 제어문
+  if ~ elif ~ else
+  for
+  while
+
+문제1] 1~100까지 중에서 3의 배수의 값 출력 및 누적 합 구하는 프로그램 ( for, if문 이용 )
+    if su % 2 == 0 :
+문제2] 년도 입력 받아서 "윤년" / "평년" 판정 프로그램 작성 (if~else 이용)
+    year % 4 == 0 :
+	(year % 100 != 0) | (year % 400 == 0)
+		윤년
+
+
+  
+4) 함수
+5) 클래스
+6) 예외처리
+7) 모듈
+8) 패키지
+
+ 
+
+----------------------
+> 강사컴 접속
+  \\192.168.0.14
+  \\desktop-09ente0
+
+   id / pwd
+  python / python 
+
+
+  이도연
+  happydoyeon88@gmail.com
+
