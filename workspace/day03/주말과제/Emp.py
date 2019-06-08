@@ -71,6 +71,7 @@ def main():
         elif flag == 3:
             name = int(input("검색할 사원 번호를 입력해주세요 :: "))
             re.priceOne(name)
+        
 
 
        
